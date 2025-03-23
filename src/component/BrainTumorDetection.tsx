@@ -1,4 +1,6 @@
 "use client";
+import dynamic from "next/dynamic";
+
 import { JSX } from "react";
 
 import { useBrainTumorDetection } from "@/hooks/useBrainTumorDetection";
@@ -7,7 +9,6 @@ import Indicator from "./Indicator";
 import UploadSection from "./UploadSection";
 import AnalyzeButton from "./AnalyzeButton";
 import ResultsSection from "./ResultSection";
-import dynamic from "next/dynamic";
 
 const LottieSpinner = dynamic(() => import("./LottieAnimation"), {
   ssr: false,
