@@ -7,7 +7,11 @@ import Indicator from "./Indicator";
 import UploadSection from "./UploadSection";
 import AnalyzeButton from "./AnalyzeButton";
 import ResultsSection from "./ResultSection";
-import LottieSpinner from "./LottieAnimation";
+import dynamic from "next/dynamic";
+
+const LottieSpinner = dynamic(() => import("./LottieAnimation"), {
+  ssr: false,
+});
 
 export default function BrainTumorDetection(): JSX.Element {
   const {
