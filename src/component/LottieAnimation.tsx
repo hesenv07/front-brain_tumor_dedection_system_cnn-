@@ -1,3 +1,5 @@
+"use client";
+
 import Lottie from "lottie-react";
 
 import spinner from "../resource/animation/brain-tumor-research.json";
